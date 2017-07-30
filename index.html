@@ -10,18 +10,46 @@
 
 <body>
     <div class="container">
-        <div class="row" id="searchRow">
-            <div class="col-lg-4 col-md-4 col-sm-4"></div>
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-                <div class="input-group" id="searchGroupDiv">
-                    <input type="text" class="form-control" placeholder="Search ...." id="searchTextBox">
-                    <span class="input-group-btn">
-                        <button class="btn btn-secondary" type="button" id="clearTextButton">X</button>
-                    </span>
-                    </input>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-2"></div>
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-8">
+                <div class="row" id="searchRow">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-12">
+                              <a href="javascript:void" id="randomLink">Click for a random article</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <a href="javascript:void" id="searchIconLink">
+                            <img src="search_icon.png" id="searchIcon"/>
+                        </a>
+                                <div class="input-group" id="searchGroupDiv">
+                                    <input type="text" class="form-control" placeholder="Search ...." id="searchTextBox">
+                                    <span class="input-group-btn">
+                                    <button class="btn" type="button" id="clearTextButton">x</button>
+                            </span>
+                                    </input>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
-            <div class="col-lg-5 col-md-5 col-sm-4"></div>
+            <div class="col-lg-5 col-md-5 col-sm-4 col-xs-2"></div>
+        </div>
+        <!-- API responses goes here -->
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-1 col-xs-1"></div>
+            <div class="col-lg-6 col-md-6 col-sm-10 col-xs-10" id="apiResultDiv">
+                <!-- results goes here -->
+                <ul id="apiResultsUL">
+                    
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-1 col-xs-1"></div>
         </div>
     </div>
     <script src="jquery-1.12.3.min.js" type="text/javascript"></script>

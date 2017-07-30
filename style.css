@@ -1,24 +1,44 @@
 body{
     background-color: rgb(227, 216, 214);
+    color: rgb(132, 60, 12);
+    text-align: center;
 }
 
 #searchRow{
-    position: fixed;
-    top: 40%;
+    margin-top: 200px;
     transition: 2s;
 }
 
 #searchGroupDiv{
-    border:  5px solid blue;
+    border:  5px solid rgb(132, 60, 12);
     border-radius: 25px;
+    visibility: hidden;
+    transition: 2s;
 }
 
 #searchTextBox{
     border-radius: 25px;
     border: 0px;
     background-color: rgb(227, 216, 214);
+    color: rgb(132, 60, 12);
 }
 
 #clearTextButton{
     background: none;
+}
+
+#searchIcon{
+    width: 45px;
+    height: auto;
+    margin: 20px;
+}
+
+#searchIconLink{
+    padding: 20px;
+}
+
+#randomLink{
+    font-size: 16px;
+    text-decoration: none;
+    color: inherit;
 }
