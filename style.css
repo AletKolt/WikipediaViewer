@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(227, 216, 214);
+}
+
+#searchRow{
+    position: fixed;
+    top: 40%;
+    transition: 2s;
+}
+
+#searchGroupDiv{
+    border:  5px solid blue;
+    border-radius: 25px;
+}
+
+#searchTextBox{
+    border-radius: 25px;
+    border: 0px;
+    background-color: rgb(227, 216, 214);
+}
+
+#clearTextButton{
+    background: none;
+}
