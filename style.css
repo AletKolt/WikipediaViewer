@@ -2,11 +2,13 @@ body{
     background-color: rgb(227, 216, 214);
     color: rgb(132, 60, 12);
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #searchRow{
     margin-top: 200px;
     transition: 2s;
+    margin-bottom: 4px;
 }
 
 #searchGroupDiv{
@@ -41,4 +43,35 @@ body{
     font-size: 16px;
     text-decoration: none;
     color: inherit;
+}
+
+#resultsRow{
+    border-top: 1px solid rgb(132, 60, 12);
+    visibility: hidden;
+}
+
+h4{
+    display: none;
+    transition: 3s;
+}
+
+#apiResultsUL li{
+    list-style-type: none;
+    padding: 15px;
+    height: auto;
+    margin-bottom: 10px;
+    background-color: rgb(204, 183, 180);
+    width: 100%;
+    text-align: left;
+}
+
+
+#apiResultsUL li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(47, 34, 33);
+}
+
+#apiResultsUL li:hover{
+    border-left: 7px solid rgb(91, 67, 63);    
 }
